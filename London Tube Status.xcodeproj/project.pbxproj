@@ -8,20 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		3CD27F071FC09C2000592234 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F061FC09C2000592234 /* AppDelegate.swift */; };
-		3CD27F091FC09C2000592234 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F081FC09C2000592234 /* ViewController.swift */; };
 		3CD27F0C1FC09C2000592234 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD27F0A1FC09C2000592234 /* Main.storyboard */; };
 		3CD27F0E1FC09C2000592234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD27F0D1FC09C2000592234 /* Assets.xcassets */; };
 		3CD27F111FC09C2000592234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD27F0F1FC09C2000592234 /* LaunchScreen.storyboard */; };
+		3CD27F1B1FC09CB700592234 /* TubeLinesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F1A1FC09CB700592234 /* TubeLinesTableViewController.swift */; };
+		3CD27F1D1FC09D2A00592234 /* TubeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F1C1FC09D2A00592234 /* TubeLine.swift */; };
+		3CD27F1F1FC09E2400592234 /* TubeLineStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F1E1FC09E2400592234 /* TubeLineStatus.swift */; };
+		3CD27F211FC09E8400592234 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F201FC09E8400592234 /* Status.swift */; };
+		3CD27F241FC09F8900592234 /* TubeLineDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F231FC09F8900592234 /* TubeLineDataSource.swift */; };
+		3CD27F271FC0A1FF00592234 /* TubeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F261FC0A1FF00592234 /* TubeError.swift */; };
+		3CD27F2A1FC0AF8100592234 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F291FC0AF8100592234 /* Stub.swift */; };
+		3CD27F2C1FC0D73700592234 /* TubeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F2B1FC0D73700592234 /* TubeCell.swift */; };
+		3CD27F2F1FC180CF00592234 /* TubeLineDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F2E1FC180CF00592234 /* TubeLineDetailViewController.swift */; };
+		3CD27F321FC18C9E00592234 /* TopAlignedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F311FC18C9E00592234 /* TopAlignedLabel.swift */; };
+		3CD27F351FC1B63900592234 /* JSONDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F341FC1B63900592234 /* JSONDownloader.swift */; };
+		3CD27F371FC1E68F00592234 /* TubeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F361FC1E68F00592234 /* TubeAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3CD27F031FC09C2000592234 /* London Tube Status.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "London Tube Status.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD27F061FC09C2000592234 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3CD27F081FC09C2000592234 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3CD27F0B1FC09C2000592234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CD27F0D1FC09C2000592234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CD27F101FC09C2000592234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CD27F121FC09C2000592234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CD27F1A1FC09CB700592234 /* TubeLinesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeLinesTableViewController.swift; sourceTree = "<group>"; };
+		3CD27F1C1FC09D2A00592234 /* TubeLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeLine.swift; sourceTree = "<group>"; };
+		3CD27F1E1FC09E2400592234 /* TubeLineStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeLineStatus.swift; sourceTree = "<group>"; };
+		3CD27F201FC09E8400592234 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		3CD27F231FC09F8900592234 /* TubeLineDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeLineDataSource.swift; sourceTree = "<group>"; };
+		3CD27F261FC0A1FF00592234 /* TubeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeError.swift; sourceTree = "<group>"; };
+		3CD27F291FC0AF8100592234 /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
+		3CD27F2B1FC0D73700592234 /* TubeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeCell.swift; sourceTree = "<group>"; };
+		3CD27F2E1FC180CF00592234 /* TubeLineDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeLineDetailViewController.swift; sourceTree = "<group>"; };
+		3CD27F311FC18C9E00592234 /* TopAlignedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAlignedLabel.swift; sourceTree = "<group>"; };
+		3CD27F341FC1B63900592234 /* JSONDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDownloader.swift; sourceTree = "<group>"; };
+		3CD27F361FC1E68F00592234 /* TubeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +60,8 @@
 		3CD27EFA1FC09C2000592234 = {
 			isa = PBXGroup;
 			children = (
+				3CD27F331FC1B62700592234 /* Networking */,
+				3CD27F301FC18C7500592234 /* Extensions */,
 				3CD27F051FC09C2000592234 /* London Tube Status */,
 				3CD27F041FC09C2000592234 /* Products */,
 			);
@@ -54,14 +78,87 @@
 		3CD27F051FC09C2000592234 /* London Tube Status */ = {
 			isa = PBXGroup;
 			children = (
+				3CD27F2D1FC1809200592234 /* Controllers */,
+				3CD27F281FC0AF7000592234 /* Stub */,
+				3CD27F251FC0A1E700592234 /* Errors */,
+				3CD27F221FC09F6C00592234 /* Data Source */,
+				3CD27F191FC09C9F00592234 /* Views */,
+				3CD27F181FC09C2B00592234 /* Model */,
 				3CD27F061FC09C2000592234 /* AppDelegate.swift */,
-				3CD27F081FC09C2000592234 /* ViewController.swift */,
 				3CD27F0A1FC09C2000592234 /* Main.storyboard */,
 				3CD27F0D1FC09C2000592234 /* Assets.xcassets */,
 				3CD27F0F1FC09C2000592234 /* LaunchScreen.storyboard */,
 				3CD27F121FC09C2000592234 /* Info.plist */,
 			);
 			path = "London Tube Status";
+			sourceTree = "<group>";
+		};
+		3CD27F181FC09C2B00592234 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CD27F1C1FC09D2A00592234 /* TubeLine.swift */,
+				3CD27F1E1FC09E2400592234 /* TubeLineStatus.swift */,
+				3CD27F201FC09E8400592234 /* Status.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3CD27F191FC09C9F00592234 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CD27F2B1FC0D73700592234 /* TubeCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3CD27F221FC09F6C00592234 /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				3CD27F231FC09F8900592234 /* TubeLineDataSource.swift */,
+			);
+			path = "Data Source";
+			sourceTree = "<group>";
+		};
+		3CD27F251FC0A1E700592234 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				3CD27F261FC0A1FF00592234 /* TubeError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		3CD27F281FC0AF7000592234 /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				3CD27F291FC0AF8100592234 /* Stub.swift */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
+		3CD27F2D1FC1809200592234 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3CD27F1A1FC09CB700592234 /* TubeLinesTableViewController.swift */,
+				3CD27F2E1FC180CF00592234 /* TubeLineDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3CD27F301FC18C7500592234 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3CD27F311FC18C9E00592234 /* TopAlignedLabel.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3CD27F331FC1B62700592234 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				3CD27F341FC1B63900592234 /* JSONDownloader.swift */,
+				3CD27F361FC1E68F00592234 /* TubeAPIClient.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +233,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CD27F091FC09C2000592234 /* ViewController.swift in Sources */,
+				3CD27F351FC1B63900592234 /* JSONDownloader.swift in Sources */,
+				3CD27F271FC0A1FF00592234 /* TubeError.swift in Sources */,
+				3CD27F241FC09F8900592234 /* TubeLineDataSource.swift in Sources */,
+				3CD27F321FC18C9E00592234 /* TopAlignedLabel.swift in Sources */,
 				3CD27F071FC09C2000592234 /* AppDelegate.swift in Sources */,
+				3CD27F2A1FC0AF8100592234 /* Stub.swift in Sources */,
+				3CD27F2C1FC0D73700592234 /* TubeCell.swift in Sources */,
+				3CD27F371FC1E68F00592234 /* TubeAPIClient.swift in Sources */,
+				3CD27F2F1FC180CF00592234 /* TubeLineDetailViewController.swift in Sources */,
+				3CD27F211FC09E8400592234 /* Status.swift in Sources */,
+				3CD27F1B1FC09CB700592234 /* TubeLinesTableViewController.swift in Sources */,
+				3CD27F1D1FC09D2A00592234 /* TubeLine.swift in Sources */,
+				3CD27F1F1FC09E2400592234 /* TubeLineStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
