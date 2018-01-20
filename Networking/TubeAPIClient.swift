@@ -8,7 +8,9 @@
 
 import Foundation
 
-
+/*
+ Class for TfL API Client request
+ */
 class TubeAPIClient {
     
     
@@ -17,6 +19,9 @@ class TubeAPIClient {
     
     typealias CurrentStatusCompletionHandler = ([TubeLine: TubeLineStatus]?, TubeError?) -> Void
     
+    /*
+     This function requests the JSON data from the API and converts it in TubeLineStatus Objects are then passed to the completion handler
+    */
     func getCurrentLineStatus(completionHandler completion: @escaping CurrentStatusCompletionHandler) {
         
         guard let url = URL(string: "https://api.tfl.gov.uk/line/Mode/tube%2Cdlr%2Coverground%2Ctflrail%2Ctram/status") else {
@@ -57,45 +62,5 @@ class TubeAPIClient {
         task.resume()
         
     }
-    
-    
-    
-    
-    
-    
-    
-//    func getCurrentWeather(at coordinate: Coordinate, completionHandler completion: @escaping CurrentWeatherCompletionHandler) {
-//
-//        guard let url = URL(string: coordinate.description, relativeTo: baseUrl) else {
-//            completion(nil, .invalidURL)
-//            return
-//        }
-//
-//        let request = URLRequest(url: url)
-//
-//        let task = downloader.jsonTask(with: request) { json, error in
-//
-//            DispatchQueue.main.async {
-//                guard let json = json else {
-//                    completion(nil, error)
-//                    return
-//                }
-//
-//                guard let currentWeatherJson = json["currently"] as? [String: AnyObject], let currentWeaher = CurrentWeather(json: currentWeatherJson) else {
-//                    completion(nil, .jsonParsingFailure)
-//                    return
-//                }
-//
-//                completion(currentWeaher, nil)
-//
-//            }
-//
-//
-//        }
-//
-//        task.resume()
-//
-//    }
-    
-    
+
 }

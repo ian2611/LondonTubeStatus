@@ -18,12 +18,17 @@ class TubeLineStatus {
     let message: String
     
     
+    
+    
     init(line: TubeLine, status: Status, message: String) {
         self.line = line
         self.status = status
         self.message = message
     }
     
+    
+    
+    // A failable initialiser that takes a JSON data. If that data represents a TubeLineStatus, it returns a TubeLineStatus object, otherwise it returns nil.
     init?(json: [String : AnyObject]) {
 //        print("*******************************")
 //        print(json)

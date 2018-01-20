@@ -23,6 +23,21 @@
 		3CD27F321FC18C9E00592234 /* TopAlignedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F311FC18C9E00592234 /* TopAlignedLabel.swift */; };
 		3CD27F351FC1B63900592234 /* JSONDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F341FC1B63900592234 /* JSONDownloader.swift */; };
 		3CD27F371FC1E68F00592234 /* TubeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F361FC1E68F00592234 /* TubeAPIClient.swift */; };
+		3CD2FDF01FF3C4C200805CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2FDEF1FF3C4C200805CD3 /* AppDelegate.swift */; };
+		3CD2FDF51FF3C4C200805CD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD2FDF31FF3C4C200805CD3 /* Main.storyboard */; };
+		3CD2FDF71FF3C4C200805CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD2FDF61FF3C4C200805CD3 /* Assets.xcassets */; };
+		3CD2FDFC1FF3C5A400805CD3 /* JSONDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F341FC1B63900592234 /* JSONDownloader.swift */; };
+		3CD2FDFD1FF3C5A800805CD3 /* TubeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F361FC1E68F00592234 /* TubeAPIClient.swift */; };
+		3CD2FDFE1FF3C5B000805CD3 /* TubeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F261FC0A1FF00592234 /* TubeError.swift */; };
+		3CD2FDFF1FF3C5B400805CD3 /* TubeLineDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F231FC09F8900592234 /* TubeLineDataSource.swift */; };
+		3CD2FE001FF3C5BB00805CD3 /* TubeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F1C1FC09D2A00592234 /* TubeLine.swift */; };
+		3CD2FE011FF3C5BF00805CD3 /* TubeLineStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F1E1FC09E2400592234 /* TubeLineStatus.swift */; };
+		3CD2FE021FF3C5C400805CD3 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F201FC09E8400592234 /* Status.swift */; };
+		3CD2FE041FF3C62D00805CD3 /* TVTubeLineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2FE031FF3C62D00805CD3 /* TVTubeLineTableViewController.swift */; };
+		3CD2FE051FF3C86000805CD3 /* TubeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD27F2B1FC0D73700592234 /* TubeCell.swift */; };
+		3CF38D3D200D2A82008BFF16 /* TubeLineCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF38D3C200D2A82008BFF16 /* TubeLineCollectionViewController.swift */; };
+		3CF539DF200A28700018DFB9 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF539DE200A28700018DFB9 /* GameKit.framework */; };
+		3CF539E1200A28790018DFB9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF539E0200A28790018DFB9 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,10 +59,28 @@
 		3CD27F311FC18C9E00592234 /* TopAlignedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAlignedLabel.swift; sourceTree = "<group>"; };
 		3CD27F341FC1B63900592234 /* JSONDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDownloader.swift; sourceTree = "<group>"; };
 		3CD27F361FC1E68F00592234 /* TubeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeAPIClient.swift; sourceTree = "<group>"; };
+		3CD2FDED1FF3C4C200805CD3 /* London Tube Status TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "London Tube Status TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD2FDEF1FF3C4C200805CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CD2FDF41FF3C4C200805CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CD2FDF61FF3C4C200805CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CD2FDF81FF3C4C200805CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CD2FE031FF3C62D00805CD3 /* TVTubeLineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVTubeLineTableViewController.swift; sourceTree = "<group>"; };
+		3CF38D3C200D2A82008BFF16 /* TubeLineCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeLineCollectionViewController.swift; sourceTree = "<group>"; };
+		3CF539DE200A28700018DFB9 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		3CF539E0200A28790018DFB9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3CD27F001FC09C2000592234 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF539DF200A28700018DFB9 /* GameKit.framework in Frameworks */,
+				3CF539E1200A28790018DFB9 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD2FDEA1FF3C4C200805CD3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,7 +96,9 @@
 				3CD27F331FC1B62700592234 /* Networking */,
 				3CD27F301FC18C7500592234 /* Extensions */,
 				3CD27F051FC09C2000592234 /* London Tube Status */,
+				3CD2FDEE1FF3C4C200805CD3 /* London Tube Status TV */,
 				3CD27F041FC09C2000592234 /* Products */,
+				3CF539DD200A28700018DFB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				3CD27F031FC09C2000592234 /* London Tube Status.app */,
+				3CD2FDED1FF3C4C200805CD3 /* London Tube Status TV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +197,28 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		3CD2FDEE1FF3C4C200805CD3 /* London Tube Status TV */ = {
+			isa = PBXGroup;
+			children = (
+				3CD2FDEF1FF3C4C200805CD3 /* AppDelegate.swift */,
+				3CD2FDF31FF3C4C200805CD3 /* Main.storyboard */,
+				3CD2FDF61FF3C4C200805CD3 /* Assets.xcassets */,
+				3CD2FDF81FF3C4C200805CD3 /* Info.plist */,
+				3CD2FE031FF3C62D00805CD3 /* TVTubeLineTableViewController.swift */,
+				3CF38D3C200D2A82008BFF16 /* TubeLineCollectionViewController.swift */,
+			);
+			path = "London Tube Status TV";
+			sourceTree = "<group>";
+		};
+		3CF539DD200A28700018DFB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CF539E0200A28790018DFB9 /* StoreKit.framework */,
+				3CF539DE200A28700018DFB9 /* GameKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,18 +239,47 @@
 			productReference = 3CD27F031FC09C2000592234 /* London Tube Status.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3CD2FDEC1FF3C4C200805CD3 /* London Tube Status TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CD2FDFB1FF3C4C200805CD3 /* Build configuration list for PBXNativeTarget "London Tube Status TV" */;
+			buildPhases = (
+				3CD2FDE91FF3C4C200805CD3 /* Sources */,
+				3CD2FDEA1FF3C4C200805CD3 /* Frameworks */,
+				3CD2FDEB1FF3C4C200805CD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "London Tube Status TV";
+			productName = "London Tube Status TV";
+			productReference = 3CD2FDED1FF3C4C200805CD3 /* London Tube Status TV.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3CD27EFB1FC09C2000592234 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0910;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Ian Billings";
 				TargetAttributes = {
 					3CD27F021FC09C2000592234 = {
 						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+					3CD2FDEC1FF3C4C200805CD3 = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -211,6 +298,7 @@
 			projectRoot = "";
 			targets = (
 				3CD27F021FC09C2000592234 /* London Tube Status */,
+				3CD2FDEC1FF3C4C200805CD3 /* London Tube Status TV */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +311,15 @@
 				3CD27F111FC09C2000592234 /* LaunchScreen.storyboard in Resources */,
 				3CD27F0E1FC09C2000592234 /* Assets.xcassets in Resources */,
 				3CD27F0C1FC09C2000592234 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CD2FDEB1FF3C4C200805CD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD2FDF71FF3C4C200805CD3 /* Assets.xcassets in Resources */,
+				3CD2FDF51FF3C4C200805CD3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +346,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3CD2FDE91FF3C4C200805CD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD2FDFE1FF3C5B000805CD3 /* TubeError.swift in Sources */,
+				3CD2FE011FF3C5BF00805CD3 /* TubeLineStatus.swift in Sources */,
+				3CD2FDFD1FF3C5A800805CD3 /* TubeAPIClient.swift in Sources */,
+				3CD2FE021FF3C5C400805CD3 /* Status.swift in Sources */,
+				3CD2FDFC1FF3C5A400805CD3 /* JSONDownloader.swift in Sources */,
+				3CF38D3D200D2A82008BFF16 /* TubeLineCollectionViewController.swift in Sources */,
+				3CD2FDF01FF3C4C200805CD3 /* AppDelegate.swift in Sources */,
+				3CD2FE041FF3C62D00805CD3 /* TVTubeLineTableViewController.swift in Sources */,
+				3CD2FDFF1FF3C5B400805CD3 /* TubeLineDataSource.swift in Sources */,
+				3CD2FE001FF3C5BB00805CD3 /* TubeLine.swift in Sources */,
+				3CD2FE051FF3C86000805CD3 /* TubeCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -266,6 +381,14 @@
 				3CD27F101FC09C2000592234 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3CD2FDF31FF3C4C200805CD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CD2FDF41FF3C4C200805CD3 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -386,7 +509,7 @@
 				DEVELOPMENT_TEAM = 6848K4HCTF;
 				INFOPLIST_FILE = "London Tube Status/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.ianbillings.London-Tube-Status";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.ianbillings.LondonTubeStatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -401,10 +524,46 @@
 				DEVELOPMENT_TEAM = 6848K4HCTF;
 				INFOPLIST_FILE = "London Tube Status/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.ianbillings.London-Tube-Status";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.ianbillings.LondonTubeStatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CD2FDF91FF3C4C200805CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6848K4HCTF;
+				INFOPLIST_FILE = "London Tube Status TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.ianbillings.London-Tube-Status-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		3CD2FDFA1FF3C4C200805CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6848K4HCTF;
+				INFOPLIST_FILE = "London Tube Status TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.ianbillings.London-Tube-Status-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
 			};
 			name = Release;
 		};
@@ -425,6 +584,15 @@
 			buildConfigurations = (
 				3CD27F161FC09C2000592234 /* Debug */,
 				3CD27F171FC09C2000592234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CD2FDFB1FF3C4C200805CD3 /* Build configuration list for PBXNativeTarget "London Tube Status TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CD2FDF91FF3C4C200805CD3 /* Debug */,
+				3CD2FDFA1FF3C4C200805CD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

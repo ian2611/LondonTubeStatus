@@ -8,7 +8,9 @@
 
 import Foundation
 
-
+/*
+ Class reponsible for Downloading JSON data from TfL API
+ */
 class JSONDownloader {
     
     
@@ -26,6 +28,12 @@ class JSONDownloader {
     
     typealias JSON = [AnyObject]
     typealias JSONTaskCompletionHandler = (JSON?, TubeError?) -> Void
+    
+    /*
+     This function takes a URL request and a completion handler that takes optional JSON and optional error.
+     The function then passes either the resulting JSON or the error to the completion handler.
+     The function returns a URLSessionDataTask.
+    */
     
     func jsonTask(with request: URLRequest, completionHandler completion: @escaping JSONTaskCompletionHandler) -> URLSessionDataTask {
         let task = session.dataTask(with: request) { data, response, error in

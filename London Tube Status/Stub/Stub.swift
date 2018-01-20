@@ -8,6 +8,10 @@
 
 import Foundation
 
+/*
+ This class provides dummy data for testing purposes.
+ */
+
 
 class Stub {
     

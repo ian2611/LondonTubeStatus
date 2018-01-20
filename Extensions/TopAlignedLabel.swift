@@ -10,6 +10,9 @@ import Foundation
 import UIKit
 
 
+/*
+ This class overrides the standard UILabel so the text is aligned to the top of the frame.
+ */
 
 @IBDesignable class TopAlignedLabel: UILabel {
     override func drawText(in rect: CGRect) {

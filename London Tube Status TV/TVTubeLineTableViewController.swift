@@ -1,52 +1,28 @@
 //
-//  TubeLinesTableViewController.swift
-//  London Tube Status
+//  TVTubeLineTableViewController.swift
+//  London Tube Status TV
 //
-//  Created by Ian Billings on 18/11/2017.
+//  Created by Ian Billings on 27/12/2017.
 //  Copyright © 2017 Ian Billings. All rights reserved.
 //
 
 import UIKit
-class TubeLinesTableViewController: UITableViewController {
 
+class TVTubeLineTableViewController: UITableViewController {
+    
     let dataSource = TubeLineDataSource()
     
     let apiClient = TubeAPIClient()
     
-    
-    // This computed property works calculates the minimum cell height based on the height of the screen in portrait mode.
-    lazy var cellHeight: CGFloat = {
-        let MinHeight: CGFloat = 30.0
-        let topSpace: CGFloat = 44.0
-        let topBarHeight: CGFloat
-        let tHeight: CGFloat
-        
-        let deviceHeight = UIScreen.main.bounds.height > UIScreen.main.bounds.width ? UIScreen.main.bounds.height : UIScreen.main.bounds.width
-        
-        if deviceHeight == 812.0 {
-            topBarHeight = topSpace + 40.0
-        } else {
-            topBarHeight = topSpace + 20.0
-        }
-        
-        tHeight = deviceHeight - topBarHeight
-        
-        let temp = tHeight/CGFloat(dataSource.count)
-        
-        return temp > MinHeight ? temp : MinHeight
-    }()
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.dataSource = dataSource
-       
-        tableView.separatorStyle = .none
         
+        self.tableView.dataSource = dataSource
         NotificationCenter.default.addObserver(self, selector: #selector(reloadTableView), name: NSNotification.Name("UpdatedData"), object: nil)
-        self.refreshControl?.addTarget(self, action: #selector(TubeLinesTableViewController.updateLineStatus(refreshControl:)), for: UIControlEvents.valueChanged)
         
         self.updateLineStatus()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,26 +30,10 @@ class TubeLinesTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // reloads the tableview
     @objc func reloadTableView() {
         self.tableView.reloadData()
     }
-    
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return cellHeight
-    }
-    
-    // Segue for transitioning to the 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "lineDetail" {
-            let detailVC = segue.destination as? TubeLineDetailViewController
-            let lineStatus = dataSource.getTubeLineStatusFor(indexPath: tableView.indexPathForSelectedRow!)
-            detailVC?.status = lineStatus
-            detailVC?.lastUpdated = dataSource.lastUpdated
-        }
-    }
-    
+
     func updateLineStatus() {
         
         apiClient.getCurrentLineStatus { currentStatus, error in
@@ -102,22 +62,12 @@ class TubeLinesTableViewController: UITableViewController {
         
     }
     
-    @objc func updateLineStatus(refreshControl: UIRefreshControl) {
-        self.updateLineStatus()
-        refreshControl.endRefreshing()
-    }
-    
     func showAlertWith(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(cancelAction)
         self.present(alert, animated: true, completion: nil)
     }
-  
-    
-   
-    
-    
     
     
 }

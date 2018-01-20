@@ -19,8 +19,10 @@ enum Status {
     case severeDelays
     case plannedClosure
     case partClosure
+    case specialService
     
     
+    // A computed property that returns the String representation of the service status.
     var statusText: String {
         
         switch self {
@@ -33,13 +35,12 @@ enum Status {
         case .severeDelays: return "Severe Delays"
         case .plannedClosure: return "Planned Closure"
         case .partClosure: return "Part Closure"
-            
-            
+        case .specialService: return "Special Service"
         }
     }
     
     
-    
+    // A failable initialiser that takes a String, and if possible returns a valid Status object. Otherwise it returns nil.
     init?(status: String) {
         
         switch status.lowercased() {
@@ -51,6 +52,7 @@ enum Status {
         case "severe delays": self = .severeDelays
         case "planned closure": self = .plannedClosure
         case "part closure": self = .partClosure
+        case "special service": self = .specialService
         default: return nil
         }
         

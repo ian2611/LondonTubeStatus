@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+
+//An extension that tries to make the creation of UIColor objects more readable, by removing the need to divide by 255.0 every figure as you do with default implementation.
 extension UIColor {
     convenience init(red: Int, green: Int, blue: Int) {
         self.init(red: CGFloat(red)/255.0, green: CGFloat(green)/255.0, blue: CGFloat(blue)/255.0, alpha: 1.0)
@@ -37,7 +39,7 @@ enum TubeLine {
     
     
     
-    
+    // Computed property that determines if the current TubeLine object is a line or not.
     var isLine: Bool {
         
         switch self {
@@ -48,6 +50,8 @@ enum TubeLine {
         
     }
     
+    
+    // Computed property that returns the String representation of the standard name of the TfL service.
     var standardName: String {
         switch self {
         case .bakerloo: return "Bakerloo"
@@ -69,6 +73,8 @@ enum TubeLine {
         
     }
     
+    
+    // Computed property that returns the String representation of the full title of the TfL service
     var fullTitle: String {
         if self.isLine {
             return "\(standardName) line"
@@ -77,6 +83,7 @@ enum TubeLine {
         }
     }
     
+    // Computed property that returns the String representation of the shortened name of the TfL service
     var shortenedName: String {
         switch self {
         case .hammersmith: return "H'smith & City"
@@ -86,6 +93,7 @@ enum TubeLine {
     }
     
     
+    // Failable initialiser that takes a String and then, if possible creates a TubeLine object, otherwise it returns nil.
     init?(lineName: String) {
         
         switch lineName.lowercased() {
@@ -107,17 +115,11 @@ enum TubeLine {
             
         default: return nil
         }
-        
-        
-        
     }
     
-    
-    
-    
+    // A function that returns the Colour that associated with the TfL service. These colours are from TfL's guidelines
     func getColourForLine() -> UIColor {
         switch self {
-            
         case .bakerloo: return UIColor(red: 178, green: 99, blue: 0)
         case .central: return UIColor(red: 220, green: 36, blue: 31)
         case .circle: return UIColor(red: 255, green: 211, blue: 41)
@@ -133,10 +135,10 @@ enum TubeLine {
         case .trams: return UIColor(red: 0, green: 189, blue: 25)
         case .victoria: return UIColor(red: 0, green: 152, blue: 216)
         case .waterloo: return UIColor(red: 147, green: 206, blue: 186)
-            
         }
     }
     
+    // A function that returns the font Colour that is associated with a TfL service. These are stated in TfL's guidelines.
     func getFontColourForLine() -> UIColor {
         
         switch self {
@@ -147,6 +149,8 @@ enum TubeLine {
         }
     }
     
+    
+    // A function that returns a tuple that represents the Colour for the service and font for a particular TfL service. 
     func getColours() -> (lineColour: UIColor, fontColour: UIColor) {
         return (getColourForLine(), getFontColourForLine())
     }
